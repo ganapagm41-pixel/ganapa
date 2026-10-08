@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Preethu | BCA Student & Aspiring Software Developer</title>
+<meta name="description" content="Portfolio of Preethu, a BCA student and aspiring software developer. Projects, skills, education and contact details.">
+<meta property="og:title" content="Preethu | Aspiring Software Developer">
+<meta property="og:description" content="BCA student building useful digital solutions. View projects, skills and resume.">
+<meta name="theme-color" content="#0b1230">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b1230;--bg2:#121a42;--card:#161f4d;--tx:#eef0fb;--mu:#a9b0d6;--ac:#a78bfa;--ac2:#6d5ef0;--bd:#2a3573;--on:#0b1230;
+--hd:'Bricolage Grotesque','Trebuchet MS',sans-serif;--bd-f:'DM Sans','Segoe UI',Arial,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#fbfaff;--bg2:#f1eefc;--card:#fff;--tx:#14193d;--mu:#525a86;--ac:#5b3fd6;--ac2:#3d2bb0;--bd:#ddd8f5;--on:#fff}}
+:root[data-theme="light"]{--bg:#fbfaff;--bg2:#f1eefc;--card:#fff;--tx:#14193d;--mu:#525a86;--ac:#5b3fd6;--ac2:#3d2bb0;--bd:#ddd8f5;--on:#fff}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 1rem/1.65 var(--bd-f)}
+h1,h2,h3{font-family:var(--hd);line-height:1.15;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ac);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+section{padding:80px 0}
+section:nth-of-type(even){background:var(--bg2)}
+h2{font-size:clamp(1.8rem,4vw,2.4rem);margin-bottom:12px}
+.lead{color:var(--mu);max-width:62ch;margin:0 0 36px}
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--bd);padding-top:env(safe-area-inset-top,0px)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font:800 1.3rem var(--hd);text-decoration:none}
+nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0}
+nav a{display:block;padding:8px 10px;border-radius:8px;text-decoration:none;color:var(--mu);font-size:.92rem;font-weight:500}
+nav a:hover,nav a.on{color:var(--tx);background:var(--card)}
+.tools{display:flex;gap:8px}
+.ib{width:40px;height:40px;border-radius:10px;border:1px solid var(--bd);background:var(--card);color:var(--tx);cursor:pointer;font-size:1.1rem}
+#menu{display:none}
+.btn{display:inline-block;padding:12px 22px;border-radius:10px;font-weight:600;text-decoration:none;border:1px solid var(--ac);cursor:pointer;font:600 1rem var(--bd-f);transition:transform .2s,background .2s}
+.btn.p{background:linear-gradient(135deg,var(--ac),var(--ac2));color:var(--on);border-color:transparent}
+.btn.p{color:#fff}
+.btn.s{background:transparent;color:var(--tx)}
+.btn:hover{transform:translateY(-2px)}
+.btn.sm{padding:8px 14px;font-size:.9rem}
+#home{padding:96px 0 88px;background:radial-gradient(900px 420px at 85% 0,color-mix(in srgb,var(--ac2) 35%,transparent),transparent),var(--bg)}
+.hero{display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:center}
+h1{font-size:clamp(2.6rem,7vw,4.6rem);font-weight:800;letter-spacing:-.02em}
+.sub{font:600 1.25rem var(--hd);color:var(--ac);margin:14px 0 18px}
+.hero p{color:var(--mu);max-width:52ch}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.photo{aspect-ratio:1;border-radius:28px;border:2px dashed var(--bd);background:linear-gradient(160deg,var(--card),var(--bg2));display:grid;place-items:center;text-align:center;color:var(--mu);padding:20px;max-width:340px;justify-self:center;width:100%}
+.photo b{display:block;font:800 4rem var(--hd);color:var(--ac)}
+.two{display:grid;grid-template-columns:1.2fr 1fr;gap:40px}
+.tl{border-left:2px solid var(--bd);padding-left:22px;margin:0;list-style:none}
+.tl li{position:relative;padding-bottom:22px}
+.tl li::before{content:"";position:absolute;left:-29px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--ac)}
+.tl small{color:var(--mu);display:block}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:22px}
+.card h3{font-size:1.15rem;margin-bottom:8px}
+.card p{margin:0 0 12px;color:var(--mu);font-size:.95rem}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+.tags span,.chips span{font-size:.8rem;padding:3px 10px;border-radius:99px;background:var(--bg2);border:1px solid var(--bd)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chips span{font-size:.9rem;padding:6px 14px}
+.sk{display:flex;justify-content:space-between;font-weight:600;margin-bottom:8px}
+.sk em{font-style:normal;color:var(--mu);font-weight:500;font-size:.85rem}
+.meter{height:8px;border-radius:99px;background:var(--bg2);overflow:hidden}
+.meter i{display:block;height:100%;width:0;border-radius:99px;background:linear-gradient(90deg,var(--ac2),var(--ac));transition:width 1.1s ease}
+.ph{border-style:dashed;text-align:center;color:var(--mu)}
+.ph h3{color:var(--tx)}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.cg{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+form{display:grid;gap:14px}
+label{font-weight:600;font-size:.92rem;display:grid;gap:6px}
+input,textarea{font:inherit;color:var(--tx);background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:12px}
+textarea{min-height:130px;resize:vertical}
+#msg{min-height:1.4em;color:var(--ac);font-weight:600;margin:0}
+dl{margin:0;display:grid;gap:14px}
+dt{font-weight:600}
+dd{margin:0;color:var(--mu)}
+footer{padding:36px 0;border-top:1px solid var(--bd)}
+.fo{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.so{display:flex;gap:10px}
+.so a{width:40px;height:40px;display:grid;place-items:center;border:1px solid var(--bd);border-radius:10px;background:var(--card)}
+.so svg{width:20px;height:20px;fill:currentColor}
+#top{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));opacity:0;pointer-events:none;transition:opacity .25s;z-index:15}
+#top.show{opacity:1;pointer-events:auto}
+.intro{animation:rise .8s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@media (max-width:860px){
+#menu{display:block}
+nav{position:absolute;left:0;right:0;top:100%;background:var(--bg);border-bottom:1px solid var(--bd);display:none;padding:8px 20px 14px}
+nav.open{display:block}
+nav ul{flex-direction:column}
+.hero,.two,.cg{grid-template-columns:1fr}
+section{padding:60px 0}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.intro{animation:none}.meter i{transition:none}.btn{transition:none}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap bar">
+<a class="logo" href="#home">Preethu</a>
+<nav id="nav" aria-label="Main">
+<ul>
+<li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#education">Education</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#certifications">Certifications</a></li><li><a href="#resume">Resume</a></li><li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+<div class="tools">
+<button class="ib" id="theme" aria-label="Switch between dark and light mode">◐</button>
+<button class="ib" id="menu" aria-label="Open menu" aria-expanded="false">☰</button>
+</div>
+</div>
+</header>
+
+<main>
+<section id="home">
+<div class="wrap hero intro">
+<div>
+<h1>Hi, I'm Preethu</h1>
+<p class="sub">BCA Student &amp; Aspiring Software Developer</p>
+<p>I'm passionate about technology and about building useful digital solutions. I'm learning to turn ideas into clean, working software.</p>
+<div class="cta">
+<a class="btn p" href="#projects">View My Projects</a>
+<a class="btn s" href="#contact">Contact Me</a>
+</div>
+</div>
+<div class="photo" role="img" aria-label="Profile photo placeholder"><div><b>P</b>Add your profile photo here</div></div>
+</div>
+</section>
+
+<section id="about">
+<div class="wrap two">
+<div>
+<h2>About me</h2>
+<p class="lead">I'm a BCA student interested in software development, web development, programming and technology in general.</p>
+<p style="color:var(--mu);max-width:62ch">My goal is to grow into a software developer who builds reliable, useful products. I keep learning by building small projects, reading code and picking up new tools. I'm looking for internship and entry-level opportunities where I can learn from a team and contribute.</p>
+</div>
+<ul class="tl" aria-label="Education timeline">
+<li><strong>BCA, in progress</strong><small>[Your college / university]</small></li>
+<li><strong>Next: internship</strong><small>Looking for opportunities in 2026</small></li>
+<li><strong>Goal: software developer</strong><small>Building and learning every day</small></li>
+</ul>
+</div>
+</section>
+
+<section id="education">
+<div class="wrap">
+<h2>Education</h2>
+<div class="card">
+<h3>Bachelor of Computer Applications (BCA)</h3>
+<p>Currently pursuing</p>
+<dl>
+<div><dt>College / University</dt><dd>[Add your college or university name]</dd></div>
+<div><dt>Location</dt><dd>[Add city, state]</dd></div>
+<div><dt>Expected graduation</dt><dd>[Add year]</dd></div>
+</dl>
+<div class="chips" aria-label="Relevant coursework"><span>Programming</span><span>Database Management</span><span>Web Development</span><span>Computer Networks</span><span>Software Engineering</span></div>
+</div>
+</div>
+</section>
+
+<section id="skills">
+<div class="wrap">
+<h2>Skills</h2>
+<p class="lead">Levels below are placeholders. Edit the percentage in each bar to match where you really are.</p>
+<div class="grid" id="skillgrid"></div>
+</div>
+</section>
+
+<section id="projects">
+<div class="wrap">
+<h2>Projects</h2>
+<p class="lead">These are sample projects. Replace each title, description and link with your own work.</p>
+<div class="grid">
+<article class="card"><h3>Student Management System</h3><p>Sample: add, edit and search student records with a simple database.</p><div class="tags"><span>Java</span><span>SQL</span></div><div class="row"><a class="btn s sm" href="https://github.com/" target="_blank" rel="noopener">GitHub</a><a class="btn p sm" href="#projects">Live demo</a></div></article>
+<article class="card"><h3>Personal Portfolio Website</h3><p>Sample: a responsive site that presents my skills and projects.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><div class="row"><a class="btn s sm" href="https://github.com/" target="_blank" rel="noopener">GitHub</a><a class="btn p sm" href="#home">Live demo</a></div></article>
+<article class="card"><h3>Online Book Store</h3><p>Sample: browse books, add to cart and check out.</p><div class="tags"><span>HTML</span><span>JavaScript</span><span>SQL</span></div><div class="row"><a class="btn s sm" href="https://github.com/" target="_blank" rel="noopener">GitHub</a><a class="btn p sm" href="#projects">Live demo</a></div></article>
+<article class="card"><h3>To-Do List Web App</h3><p>Sample: create, complete and delete daily tasks.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><div class="row"><a class="btn s sm" href="https://github.com/" target="_blank" rel="noopener">GitHub</a><a class="btn p sm" href="#projects">Live demo</a></div></article>
+</div>
+</div>
+</section>
+
+<section id="certifications">
+<div class="wrap">
+<h2>Certifications &amp; achievements</h2>
+<p class="lead">Add only what you've earned. Each card is an empty slot ready for your details.</p>
+<div class="grid">
+<div class="card ph"><h3>Programming certifications</h3><p>[Add course name, issuer and year]</p></div>
+<div class="card ph"><h3>Web development certifications</h3><p>[Add course name, issuer and year]</p></div>
+<div class="card ph"><h3>Workshops</h3><p>[Add workshop title and date]</p></div>
+<div class="card ph"><h3>Hackathons</h3><p>[Add event name and your result]</p></div>
+<div class="card ph"><h3>Academic achievements</h3><p>[Add award, rank or scholarship]</p></div>
+</div>
+</div>
+</section>
+
+<section id="resume">
+<div class="wrap">
+<h2>Resume</h2>
+<p class="lead">Both buttons point to a placeholder file. Set RESUME_URL in the script to your own PDF link.</p>
+<div class="row">
+<a class="btn p" id="rview" href="#resume" target="_blank" rel="noopener">View resume</a>
+<a class="btn s" id="rdown" href="#resume" download="Preethu-Resume.pdf">Download resume</a>
+</div>
+<p id="rnote" style="color:var(--mu)"></p>
+</div>
+</section>
+
+<section id="contact">
+<div class="wrap cg">
+<div>
+<h2>Contact</h2>
+<p class="lead">Have an internship or project in mind? Send a message.</p>
+<dl>
+<div><dt>Email</dt><dd>[your.email@example.com]</dd></div>
+<div><dt>Phone</dt><dd>[Add phone number]</dd></div>
+<div><dt>Location</dt><dd>[Add city, state]</dd></div>
+<div><dt>LinkedIn</dt><dd>[Add profile link]</dd></div>
+<div><dt>GitHub</dt><dd>[Add profile link]</dd></div>
+</dl>
+</div>
+<form id="form" novalidate>
+<label>Name<input name="name" autocomplete="name" required></label>
+<label>Email<input name="email" type="email" autocomplete="email" required></label>
+<label>Message<textarea name="message" required></textarea></label>
+<button class="btn p" type="submit">Send message</button>
+<p id="msg" role="status"></p>
+</form>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap fo">
+<span>© 2026 Preethu. All Rights Reserved.</span>
+<div class="so">
+<a href="https://github.com/" aria-label="GitHub" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg></a>
+<a href="https://www.linkedin.com/" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zm7 0h3.8v1.6h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78s-1.96 1.32-1.96 2.69V21h-4z"/></svg></a>
+<a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.2 5.8a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/></svg></a>
+<a href="#contact" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4.5 7v.1L12 12.5 19.5 7.1V7zM4 17h16V9.4l-8 5.5-8-5.5z"/></svg></a>
+</div>
+</div>
+</footer>
+
+<button class="btn p ib" id="top" aria-label="Scroll to top">↑</button>
+
+<script>
+/* ---- Edit these ---- */
+var EMAIL = "your.email@example.com";
+var RESUME_URL = ""; // paste your PDF link here
+var SKILLS = [
+ ["HTML",70],["CSS",65],["JavaScript",55],["Python",60],["Java",55],
+ ["C",60],["SQL",60],["Git/GitHub",50],["Web Development",60],["Problem Solving",65]
+];
+/* -------------------- */
+var root=document.documentElement;
+function store(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}}
+var saved=store("theme");if(saved)root.setAttribute("data-theme",saved);
+document.getElementById("theme").onclick=function(){
+ var dark=getComputedStyle(root).getPropertyValue("--bg").trim()==="#0b1230";
+ var n=dark?"light":"dark";root.setAttribute("data-theme",n);store("theme",n)};
+var nav=document.getElementById("nav"),mb=document.getElementById("menu");
+mb.onclick=function(){var o=nav.classList.toggle("open");mb.setAttribute("aria-expanded",o)};
+nav.addEventListener("click",function(e){if(e.target.tagName==="A"){nav.classList.remove("open");mb.setAttribute("aria-expanded","false")}});
+var g=document.getElementById("skillgrid");
+SKILLS.forEach(function(s){
+ var d=document.createElement("div");d.className="card";
+ d.innerHTML='<div class="sk"><span>'+s[0]+'</span><em>'+s[1]+'%</em></div><div class="meter" role="img" aria-label="'+s[0]+' '+s[1]+' percent"><i data-w="'+s[1]+'"></i></div>';
+ g.appendChild(d)});
+var bars=document.querySelectorAll(".meter i");
+function fill(){bars.forEach(function(b){b.style.width=b.dataset.w+"%"})}
+if("IntersectionObserver" in window){
+ new IntersectionObserver(function(en,o){if(en[0].isIntersecting){fill();o.disconnect()}},{threshold:.2}).observe(g)}else fill();
+var top=document.getElementById("top");
+addEventListener("scroll",function(){top.classList.toggle("show",scrollY>500)},{passive:true});
+top.onclick=function(){scrollTo({top:0,behavior:"smooth"})};
+var rv=document.getElementById("rview"),rd=document.getElementById("rdown"),rn=document.getElementById("rnote");
+if(RESUME_URL){rv.href=RESUME_URL;rd.href=RESUME_URL}
+else{rn.textContent="No resume linked yet. Add your PDF link in the script to activate these buttons.";
+ [rv,rd].forEach(function(a){a.addEventListener("click",function(e){e.preventDefault()})})}
+document.getElementById("form").addEventListener("submit",function(e){
+ e.preventDefault();var f=e.target,m=document.getElementById("msg");
+ if(!f.name.value.trim()||!/^\S+@\S+\.\S+$/.test(f.email.value)||!f.message.value.trim()){m.textContent="Please fill in your name, a valid email and a message.";return}
+ var body=f.message.value+"\n\nFrom: "+f.name.value+" ("+f.email.value+")";
+ location.href="mailto:"+EMAIL+"?subject="+encodeURIComponent("Portfolio message from "+f.name.value)+"&body="+encodeURIComponent(body);
+ m.textContent="Opening your email app to send the message."});
+var links=document.querySelectorAll("nav a"),secs=[].slice.call(document.querySelectorAll("main section"));
+addEventListener("scroll",function(){var y=scrollY+120,cur=secs[0].id;
+ secs.forEach(function(s){if(s.offsetTop<=y)cur=s.id});
+ links.forEach(function(a){a.classList.toggle("on",a.getAttribute("href")==="#"+cur)})},{passive:true});
+</script>
+</body>
+</html>
